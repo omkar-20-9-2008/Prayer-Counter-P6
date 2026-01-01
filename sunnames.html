@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prayer Counter P6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <div class="menu">
+        <span id="title">Prayer Counter P6</span>
+
+<div class="container" id="boxing">  
+ <input id="checkbox" type="checkbox" onclick="check()">
+    <label class="toggle" for="checkbox">
+        <div id="bar1" class="bars"></div>
+        <div id="bar2" class="bars"></div>
+        <div id="bar3" class="bars"></div>
+    </label>
+
+</div>
+
+    </div></nav>
+
+    <!--Menubar-->
+    <div id="menubar">
+        <center>
+
+        <a href="index.html" class="links">Home</a><br><br>
+        <a href="h108.html" class="links">×108</a><br><br>
+        <a href="h10.html" class="links">×10</a><br><br>
+        <a href="hc.html" class="links">Hanuman Chalisa</a><br><br>
+        <label class="links">Darkmode: </label><button class="links" id="dmon" onclick="darkmodeon()">On</button><button class="links" id="dmoff" onclick="darkmodeoff()">Off</button>
+
+        <br><br><br><br><label class="links">Credits: Omkar Suhas Indulkar</label>
+
+        </center>
+    </div>
+
+    <center><img style="margin-top: 58px;" src="surya_namaskar_mantra.jpg" alt="suryachi nave" width="350" height="610"></center>
+
+
+    <script type="text/javascript">
+
+        function check(){
+            var checkBox = document.getElementById("checkbox");
+
+            var menubar = document.getElementById("menubar");
+
+            if (checkBox.checked == true){
+                menubar.style.display="block";
+            } else {
+                menubar.style.display="none";
+            }
+        }
+
+        function darkmodeon(){
+            var onn = document.getElementById("dmon");
+            var offf = document.getElementById("dmoff");
+            var op = document.getElementById("op");
+            var hcn =document.getElementById("hcn");
+
+            onn.style.display="none";
+            offf.style.display="block";
+
+            document.body.style.backgroundColor="#000032";
+            op.style.color="white";
+            hcn.style.color="white";
+
+        }
+
+        function darkmodeoff(){
+            var onn = document.getElementById("dmon");
+            var offf = document.getElementById("dmoff");
+            var op = document.getElementById("op");
+            var hcn =document.getElementById("hcn");
+
+            offf.style.display="none";
+            onn.style.display="block";
+
+            document.body.style.backgroundColor="#c9e9f5"; 
+            op.style.color="rgb(5, 22, 14)";
+            hcn.style.color="rgb(5, 22, 14)";
+        }
+
+    </script>
+</body>
+
+</html>
